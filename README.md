@@ -6,6 +6,17 @@
 
 ---
 
+## 📥 저장소 클론(Clone) 방법
+
+본 교육 자료와 실습 예제 소스 코드를 내 컴퓨터로 내려받으려면, 터미널(또는 Git Bash/PowerShell)을 열고 아래 명령어를 입력하세요:
+
+```bash
+git clone https://github.com/bcleemd/teaching-vibe-coding.git
+cd teaching-vibe-coding
+```
+
+---
+
 ## 📅 교육 커리큘럼
 
 - **[1부: CLI 설치 및 기초 환경 설정 가이드](session1_cli_setup.md)**
