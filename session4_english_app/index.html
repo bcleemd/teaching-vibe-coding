@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe English 1000 - 1000문장 학습기</title>
+    <!-- Google Fonts: Outfit, Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-graduation-cap brand-icon"></i>
+                <h2>Vibe English</h2>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-mode="flashcard" id="btn-mode-flashcard">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>플래시카드</span>
+                </button>
+                <button class="nav-item" data-mode="quiz" id="btn-mode-quiz">
+                    <i class="fa-solid fa-keyboard"></i>
+                    <span>문답 퀴즈</span>
+                </button>
+                <button class="nav-item" data-mode="listening" id="btn-mode-listening">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <span>연속 흘려듣기</span>
+                </button>
+            </nav>
+
+            <div class="stats-panel">
+                <div class="stat-item">
+                    <span class="stat-label">학습 진도</span>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <span class="stat-value" id="progress-text">0 / 50 (0%)</span>
+                </div>
+                <div class="stat-item mini">
+                    <div>
+                        <span class="stat-label">정답률</span>
+                        <span class="stat-value" id="accuracy-text">0%</span>
+                    </div>
+                    <div>
+                        <span class="stat-label">북마크</span>
+                        <span class="stat-value" id="bookmark-count">0개</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="app-header">
+                <div class="header-info">
+                    <h1 id="mode-title">플래시카드 학습</h1>
+                    <p id="mode-desc">영어를 확인하고 카드를 클릭해 한글 뜻을 확인해보세요.</p>
+                </div>
+                <div class="header-controls">
+                    <button class="btn-secondary" id="btn-toggle-bookmark" title="북마크 등록">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                    <button class="btn-secondary" id="btn-reset-data" title="학습 진도 초기화">
+                        <i class="fa-solid fa-rotate-left"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Learning Stage -->
+            <section class="stage">
+                <!-- 1. Flashcard Mode Stage -->
+                <div class="stage-view active" id="view-flashcard">
+                    <div class="flashcard-container" id="flashcard">
+                        <div class="flashcard-inner">
+                            <div class="flashcard-front">
+                                <span class="card-index" id="card-index-front">#1</span>
+                                <div class="sentence-display english" id="card-english">What does she look like?</div>
+                                <button class="btn-tts" id="btn-card-tts" title="발음 듣기">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                                <div class="card-instruction"><i class="fa-solid fa-repeat"></i> 클릭해서 한글 뜻 확인</div>
+                            </div>
+                            <div class="flashcard-back">
+                                <span class="card-index">한글 해석</span>
+                                <div class="sentence-display korean" id="card-korean">그녀는 어떻게 생겼나요?</div>
+                                <div class="sentence-tip" id="card-tip">상대방의 '외모'를 묻는 단골 질문입니다.</div>
+                                <div class="card-instruction"><i class="fa-solid fa-repeat"></i> 클릭해서 영어로 돌아가기</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Quiz Mode Stage -->
+                <div class="stage-view" id="view-quiz">
+                    <div class="quiz-container">
+                        <div class="quiz-card">
+                            <span class="card-index" id="quiz-index">#1</span>
+                            <div class="quiz-question">
+                                <span class="question-label">해석을 보고 영작해보세요:</span>
+                                <div class="sentence-display korean" id="quiz-korean">그녀는 어떻게 생겼나요?</div>
+                            </div>
+
+                            <div class="quiz-input-area">
+                                <input type="text" id="quiz-input" placeholder="여기에 올바른 영어 문장을 입력하세요..." autocomplete="off">
+                                <div class="quiz-hint-panel" id="quiz-hint-panel">
+                                    <button class="btn-hint" id="btn-show-hint">
+                                        <i class="fa-regular fa-lightbulb"></i> 힌트 보기
+                                    </button>
+                                    <span class="hint-text" id="quiz-hint-text" style="display: none;">상대방의 외모를 묻는 단골 질문입니다.</span>
+                                </div>
+                            </div>
+
+                            <div class="quiz-feedback" id="quiz-feedback">
+                                <div class="feedback-icon" id="feedback-icon"></div>
+                                <div class="feedback-msg" id="feedback-msg"></div>
+                                <div class="correct-answer" id="correct-answer-display" style="display: none;">
+                                    정답: <span id="correct-answer-text"></span>
+                                </div>
+                            </div>
+
+                            <div class="quiz-actions">
+                                <button class="btn-primary" id="btn-check-quiz">정답 확인</button>
+                                <button class="btn-secondary" id="btn-next-quiz" style="display: none;">다음 문제 <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Listening Mode Stage -->
+                <div class="stage-view" id="view-listening">
+                    <div class="listening-container">
+                        <div class="player-card">
+                            <div class="player-visualizer">
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                                <div class="wave-bar"></div>
+                            </div>
+
+                            <div class="now-playing">
+                                <span class="card-index" id="play-index">#1 / 50</span>
+                                <div class="sentence-display english" id="play-english">What does she look like?</div>
+                                <div class="sentence-display korean" id="play-korean">그녀는 어떻게 생겼나요?</div>
+                            </div>
+
+                            <div class="player-controls">
+                                <div class="speed-control">
+                                    <label for="play-speed">속도: </label>
+                                    <select id="play-speed">
+                                        <option value="0.8">0.8x (느리게)</option>
+                                        <option value="1.0" selected>1.0x (보통)</option>
+                                        <option value="1.2">1.2x (빠르게)</option>
+                                    </select>
+                                </div>
+                                <div class="main-buttons">
+                                    <button class="btn-player-side" id="btn-play-prev" title="이전"><i class="fa-solid fa-backward-step"></i></button>
+                                    <button class="btn-player-center" id="btn-play-toggle" title="재생/일시정지"><i class="fa-solid fa-play"></i></button>
+                                    <button class="btn-player-side" id="btn-play-next" title="다음"><i class="fa-solid fa-forward-step"></i></button>
+                                </div>
+                                <div class="repeat-control">
+                                    <button class="btn-toggle-repeat active" id="btn-toggle-repeat" title="자동 반복">
+                                        <i class="fa-solid fa-arrows-spin"></i> 연속 자동 재생 ON
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation Controls (Bottom Bar) -->
+            <footer class="app-footer" id="navigation-footer">
+                <button class="btn-nav" id="btn-prev"><i class="fa-solid fa-arrow-left"></i> 이전 문장</button>
+                <div class="index-indicator">
+                    <span id="current-index-num">1</span> / <span id="total-index-num">50</span>
+                </div>
+                <button class="btn-nav" id="btn-next">다음 문장 <i class="fa-solid fa-arrow-right"></i></button>
+            </footer>
+        </main>
+
+        <!-- Bookmarks Modal / Sidebar Panel -->
+        <aside class="bookmarks-panel">
+            <div class="panel-header">
+                <h3><i class="fa-solid fa-star"></i> 북마크 노트</h3>
+            </div>
+            <div class="bookmark-list-container">
+                <ul class="bookmark-list" id="bookmark-list">
+                    <li class="empty-state">북마크된 문장이 없습니다.</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

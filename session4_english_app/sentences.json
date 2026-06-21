@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "english": "What does she look like?",
+    "korean": "그녀는 어떻게 생겼나요?",
+    "hint": "상대방의 '외모'를 묻는 단골 질문입니다."
+  },
+  {
+    "id": 2,
+    "english": "What is she like?",
+    "korean": "그녀는 어떤 사람인가요?",
+    "hint": "상대방의 '성격'이나 '특징'을 묻는 질문입니다."
+  },
+  {
+    "id": 3,
+    "english": "It's on the house.",
+    "korean": "서비스입니다 (가게에서 무료 제공).",
+    "hint": "식당이나 바에서 주인이 음식을 무료로 줄 때 사용합니다."
+  },
+  {
+    "id": 4,
+    "english": "I'm on my way.",
+    "korean": "지금 가는 중이에요.",
+    "hint": "약속 장소로 가고 있는 도중일 때 쓰는 표현입니다."
+  },
+  {
+    "id": 5,
+    "english": "Can I take a rain check?",
+    "korean": "다음 기회로 미룰 수 있을까요?",
+    "hint": "상대방의 제안을 정중히 거절하며 다음을 기약할 때 씁니다."
+  },
+  {
+    "id": 6,
+    "english": "Keep the change.",
+    "korean": "잔돈은 가지세요.",
+    "hint": "택시나 음식점 등에서 팁으로 잔돈을 줄 때 씁니다."
+  },
+  {
+    "id": 7,
+    "english": "It's a piece of cake.",
+    "korean": "식은 죽 먹기예요.",
+    "hint": "일이 매우 쉽고 간단함을 비유적으로 이르는 말입니다."
+  },
+  {
+    "id": 8,
+    "english": "Better late than never.",
+    "korean": "늦더라도 아예 안 하는 것보다 낫습니다.",
+    "hint": "늦게라도 행동에 옮기는 것이 가치 있음을 격려할 때 씁니다."
+  },
+  {
+    "id": 9,
+    "english": "Cross your fingers for me.",
+    "korean": "나를 위해 행운을 빌어줘.",
+    "hint": "손가락을 꼬아 행운을 비는 제스처에서 유래했습니다."
+  },
+  {
+    "id": 10,
+    "english": "I didn't mean it.",
+    "korean": "그럴 뜻은 아니었어요 (고의가 아니었어요).",
+    "hint": "오해를 풀기 위해 내 의도가 나쁜 것이 아니었음을 해명할 때 씁니다."
+  },
+  {
+    "id": 11,
+    "english": "Speak of the devil.",
+    "korean": "호랑이도 제 말 하면 온다더니.",
+    "hint": "누군가에 대해 이야기하는 도중에 그 사람이 나타났을 때 씁니다."
+  },
+  {
+    "id": 12,
+    "english": "Could you do me a favor?",
+    "korean": "부탁 하나 들어주실 수 있나요?",
+    "hint": "상대방에게 조심스럽게 도움을 청할 때 쓰는 표준 표현입니다."
+  },
+  {
+    "id": 13,
+    "english": "I have no idea.",
+    "korean": "전혀 모르겠어요.",
+    "hint": "I don't know보다 좀 더 모른다는 점을 강조하는 뉘앙스입니다."
+  },
+  {
+    "id": 14,
+    "english": "Never mind.",
+    "korean": "신경 쓰지 마세요 (괜찮아요).",
+    "hint": "방금 한 말을 취소하거나 지나간 사소한 일에 신경 쓰지 말라고 할 때 씁니다."
+  },
+  {
+    "id": 15,
+    "english": "So far, so good.",
+    "korean": "지금까지는 아주 좋아요.",
+    "hint": "일의 진행 상황이 현재까지 순조로움을 나타냅니다."
+  },
+  {
+    "id": 16,
+    "english": "Make yourself at home.",
+    "korean": "집처럼 편하게 계세요.",
+    "hint": "손님이 집에 방문했을 때 긴장을 풀고 편히 있으라는 뜻입니다."
+  },
+  {
+    "id": 17,
+    "english": "It doesn't matter.",
+    "korean": "그건 상관없어요.",
+    "hint": "어떤 선택이든 결과에 크게 지장이 없음을 밝힐 때 씁니다."
+  },
+  {
+    "id": 18,
+    "english": "Keep in touch.",
+    "korean": "계속 연락하고 지내요.",
+    "hint": "헤어질 때 앞으로 지속적으로 안부를 전하자는 인사말입니다."
+  },
+  {
+    "id": 19,
+    "english": "That makes sense.",
+    "korean": "말이 되네요 (이해가 가네요).",
+    "hint": "상대방의 의견이나 설명에 타당성이 있어 수긍할 때 씁니다."
+  },
+  {
+    "id": 20,
+    "english": "How have you been?",
+    "korean": "그동안 어떻게 지내셨어요?",
+    "hint": "오랜만에 만난 지인에게 안부를 묻는 현재완료 질문입니다."
+  },
+  {
+    "id": 21,
+    "english": "I'm exhausted.",
+    "korean": "완전히 지쳤어요.",
+    "hint": "몸이 매우 피곤하여 에너지가 하나도 없는 상태를 표현합니다."
+  },
+  {
+    "id": 22,
+    "english": "It slipped my mind.",
+    "korean": "깜빡 잊어버렸어요.",
+    "hint": "해야 할 약속이나 할 일을 순간적으로 잊었을 때 유용합니다."
+  },
+  {
+    "id": 23,
+    "english": "I'll get back to you.",
+    "korean": "알아보고 나중에 다시 연락드릴게요.",
+    "hint": "즉답하기 곤란할 때 확인 후 재연락을 약속하는 표현입니다."
+  },
+  {
+    "id": 24,
+    "english": "Take your time.",
+    "korean": "천천히 하세요 (서두르지 마세요).",
+    "hint": "상대방이 시간에 쫓기지 않고 꼼꼼히 하도록 배려하는 말입니다."
+  },
+  {
+    "id": 25,
+    "english": "I'm looking forward to it.",
+    "korean": "정말 기대돼요.",
+    "hint": "앞으로 일어날 기쁜 일을 설레는 마음으로 기다린다는 표현입니다."
+  },
+  {
+    "id": 26,
+    "english": "No pain, no gain.",
+    "korean": "고통 없이는 얻는 것도 없다.",
+    "hint": "노력을 기여해야 가치 있는 결과를 얻을 수 있다는 격언입니다."
+  },
+  {
+    "id": 27,
+    "english": "Let's call it a day.",
+    "korean": "오늘은 이만 마칩시다.",
+    "hint": "직장이나 모임에서 하루 일과를 끝내고 퇴근하자는 의미입니다."
+  },
+  {
+    "id": 28,
+    "english": "It cost an arm and a leg.",
+    "korean": "엄청나게 비쌌어요.",
+    "hint": "터무니없이 많은 비용을 지불했음을 유머러스하게 강조합니다."
+  },
+  {
+    "id": 29,
+    "english": "Don't sweat it.",
+    "korean": "걱정하지 마세요 (신경 쓰지 마세요).",
+    "hint": "사소한 실수에 불안해하는 상대방을 다독일 때 사용합니다."
+  },
+  {
+    "id": 30,
+    "english": "I'm green with envy.",
+    "korean": "부러워 죽겠어요.",
+    "hint": "질투나 샘이 나 눈이 초록색으로 바뀔 만큼 몹시 부럽다는 관용구입니다."
+  },
+  {
+    "id": 31,
+    "english": "Let's grab a bite to eat.",
+    "korean": "간단히 뭐 좀 먹으러 가요.",
+    "hint": "정식 식사보다 가벼운 간식이나 식사를 빠르게 하러 가자고 제안합니다."
+  },
+  {
+    "id": 32,
+    "english": "I'm on the fence.",
+    "korean": "아직 결정을 못 내리겠어요.",
+    "hint": "울타리 위에 걸터앉아 이쪽저쪽을 저울질하며 갈등하는 모습에서 유래했습니다."
+  },
+  {
+    "id": 33,
+    "english": "It's up in the air.",
+    "korean": "아직 확실히 결정된 게 없어요.",
+    "hint": "계획이 확정되지 않고 공중에 떠 있는 듯 불확실한 상태를 가리킵니다."
+  },
+  {
+    "id": 34,
+    "english": "Out of the blue.",
+    "korean": "갑자기 (난데없이).",
+    "hint": "맑은 하늘(Blue sky)에서 마른하늘에 날벼락이 치는 상황처럼 뜬금없음을 뜻합니다."
+  },
+  {
+    "id": 35,
+    "english": "Under the weather.",
+    "korean": "몸 상태가 찌뿌둥해요 (컨디션이 안 좋아요).",
+    "hint": "날씨 탓에 몸이 으스스하거나 가볍게 아플 때 자주 쓰는 생활 표현입니다."
+  },
+  {
+    "id": 36,
+    "english": "Break a leg.",
+    "korean": "행운을 빌어 (무대 잘해!).",
+    "hint": "연극 무대에 올라가기 전 징크스를 깨기 위해 일부러 반대로 행운을 빌어주던 말입니다."
+  },
+  {
+    "id": 37,
+    "english": "Don't put all your eggs in one basket.",
+    "korean": "모든 위험을 한군데에 걸지 마세요.",
+    "hint": "투자나 행동 시 한꺼번에 모두 잃지 않도록 분산하라는 유명한 경고 격언입니다."
+  },
+  {
+    "id": 38,
+    "english": "It cost a fortune.",
+    "korean": "거금이 들었어요.",
+    "hint": "엄청난 가격을 지출했음을 과장하여 나타내는 표현입니다."
+  },
+  {
+    "id": 39,
+    "english": "A blessing in disguise.",
+    "korean": "전화위복 (불행인 줄 알았던 다행).",
+    "hint": "초반에는 악재처럼 보였으나 결과적으로 큰 득이 된 상황을 가리킵니다."
+  },
+  {
+    "id": 40,
+    "english": "Beat around the bush.",
+    "korean": "본론을 말하지 않고 돌려 말하다.",
+    "hint": "핵심을 직접 언급하지 않고 핵심 주위를 맴돌며 쓸데없는 말을 하는 모양입니다."
+  },
+  {
+    "id": 41,
+    "english": "Bite the bullet.",
+    "korean": "이를 악물고 견디다 (피할 수 없는 난국을 받아들이다).",
+    "hint": "옛날 마취 없이 수술할 때 고통을 참으려 탄환을 입에 물었던 데서 유래했습니다."
+  },
+  {
+    "id": 42,
+    "english": "Call it a night.",
+    "korean": "밤이 늦었으니 이만 끝내고 잠자리에 듭시다.",
+    "hint": "야근이나 밤모임을 정리하고 해산하려 할 때 씁니다."
+  },
+  {
+    "id": 43,
+    "english": "Get out of hand.",
+    "korean": "통제를 벗어나다 (감당할 수 없게 되다).",
+    "hint": "손아귀(Hand) 밖으로 빠져나가 통제가 불가능해진 곤란한 상태입니다."
+  },
+  {
+    "id": 44,
+    "english": "Go back to the drawing board.",
+    "korean": "처음부터 다시 계획을 설계하다 (원점 재시작).",
+    "hint": "설계 도판(Drawing board)으로 되돌아가 실패한 계획을 완전히 새로 짤 때 씁니다."
+  },
+  {
+    "id": 45,
+    "english": "Hang in there.",
+    "korean": "조금만 더 버텨봐 (낙담하지 마).",
+    "hint": "고난을 겪고 있는 친구나 동료에게 끈기 있게 견디라고 격려할 때 씁니다."
+  },
+  {
+    "id": 46,
+    "english": "Hit the sack.",
+    "korean": "잠자리에 들다 (자러 가다).",
+    "hint": "여기서 자루(Sack)는 침대의 매트리스를 뜻하며, 자러 간다는 구어체입니다."
+  },
+  {
+    "id": 47,
+    "english": "It's not rocket science.",
+    "korean": "그렇게 어렵거나 복잡한 일이 아니에요.",
+    "hint": "로켓 우주 공학 수준의 난해한 학문이 아니니 지레 겁먹지 말라는 위트 있는 조언입니다."
+  },
+  {
+    "id": 48,
+    "english": "Miss the boat.",
+    "korean": "기차를 놓치다 (기회를 놓치다).",
+    "hint": "대세나 핵심적인 타이밍을 놓쳐 기회가 지나갔음을 아쉬워할 때 씁니다."
+  },
+  {
+    "id": 49,
+    "english": "No brainer.",
+    "korean": "생각할 필요도 없는 아주 쉬운 결정.",
+    "hint": "뇌(Brain)를 쓰지 않아도 누구나 당연히 골라야 할 유리한 결정을 가리킵니다."
+  },
+  {
+    "id": 50,
+    "english": "Pull yourself together.",
+    "korean": "정신 바짝 차려 (마음을 추스려).",
+    "hint": "흥분하거나 절망에 빠진 상대방에게 감정을 다잡고 차분해지라고 충고합니다."
+  }
+]
